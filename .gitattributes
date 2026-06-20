@@ -1,0 +1,4 @@
+*.nuon linguist-language=Nushell
+
+src/generated.rs linguist-generated=true
+src/generated.h linguist-generated=true

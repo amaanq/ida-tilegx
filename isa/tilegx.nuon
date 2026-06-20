@@ -1,0 +1,1300 @@
+{
+  operands: [
+    {idx: 0,  type: imm,  num_bits: 8,  signed: true,  src: false, dest: false, pc_rel: false, rightshift: 0, bits: [[12, 0], [13, 1], [14, 2], [15, 3], [16, 4], [17, 5], [18, 6], [19, 7]]},
+    {idx: 1,  type: imm,  num_bits: 8,  signed: true,  src: false, dest: false, pc_rel: false, rightshift: 0, bits: [[43, 0], [44, 1], [45, 2], [46, 3], [47, 4], [48, 5], [49, 6], [50, 7]]},
+    {idx: 2,  type: imm,  num_bits: 8,  signed: true,  src: false, dest: false, pc_rel: false, rightshift: 0, bits: [[12, 0], [13, 1], [14, 2], [15, 3], [16, 4], [17, 5], [18, 6], [19, 7]]},
+    {idx: 3,  type: imm,  num_bits: 8,  signed: true,  src: false, dest: false, pc_rel: false, rightshift: 0, bits: [[43, 0], [44, 1], [45, 2], [46, 3], [47, 4], [48, 5], [49, 6], [50, 7]]},
+    {idx: 4,  type: imm,  num_bits: 16, signed: true,  src: false, dest: false, pc_rel: false, rightshift: 0, bits: [[12, 0], [13, 1], [14, 2], [15, 3], [16, 4], [17, 5], [18, 6], [19, 7], [20, 8], [21, 9], [22, 10], [23, 11], [24, 12], [25, 13], [26, 14], [27, 15]]},
+    {idx: 5,  type: imm,  num_bits: 16, signed: true,  src: false, dest: false, pc_rel: false, rightshift: 0, bits: [[43, 0], [44, 1], [45, 2], [46, 3], [47, 4], [48, 5], [49, 6], [50, 7], [51, 8], [52, 9], [53, 10], [54, 11], [55, 12], [56, 13], [57, 14], [58, 15]]},
+    {idx: 6,  type: reg,  num_bits: 6,  signed: false, src: false, dest: true,  pc_rel: false, rightshift: 0, bits: [[31, 0], [32, 1], [33, 2], [34, 3], [35, 4], [36, 5]]},
+    {idx: 7,  type: reg,  num_bits: 6,  signed: false, src: true,  dest: false, pc_rel: false, rightshift: 0, bits: [[37, 0], [38, 1], [39, 2], [40, 3], [41, 4], [42, 5]]},
+    {idx: 8,  type: reg,  num_bits: 6,  signed: false, src: false, dest: true,  pc_rel: false, rightshift: 0, bits: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 5]]},
+    {idx: 9,  type: reg,  num_bits: 6,  signed: false, src: true,  dest: false, pc_rel: false, rightshift: 0, bits: [[6, 0], [7, 1], [8, 2], [9, 3], [10, 4], [11, 5]]},
+    {idx: 10, type: reg,  num_bits: 6,  signed: false, src: false, dest: true,  pc_rel: false, rightshift: 0, bits: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 5]]},
+    {idx: 11, type: reg,  num_bits: 6,  signed: false, src: true,  dest: false, pc_rel: false, rightshift: 0, bits: [[6, 0], [7, 1], [8, 2], [9, 3], [10, 4], [11, 5]]},
+    {idx: 12, type: reg,  num_bits: 6,  signed: false, src: false, dest: true,  pc_rel: false, rightshift: 0, bits: [[31, 0], [32, 1], [33, 2], [34, 3], [35, 4], [36, 5]]},
+    {idx: 13, type: reg,  num_bits: 6,  signed: false, src: true,  dest: false, pc_rel: false, rightshift: 0, bits: [[37, 0], [38, 1], [39, 2], [40, 3], [41, 4], [42, 5]]},
+    {idx: 14, type: reg,  num_bits: 6,  signed: false, src: true,  dest: false, pc_rel: false, rightshift: 0, bits: [[20, 0], [21, 1], [22, 2], [23, 3], [24, 4], [25, 5]]},
+    {idx: 15, type: reg,  num_bits: 6,  signed: false, src: true,  dest: true,  pc_rel: false, rightshift: 0, bits: [[37, 0], [38, 1], [39, 2], [40, 3], [41, 4], [42, 5]]},
+    {idx: 16, type: reg,  num_bits: 6,  signed: false, src: true,  dest: false, pc_rel: false, rightshift: 0, bits: [[12, 0], [13, 1], [14, 2], [15, 3], [16, 4], [17, 5]]},
+    {idx: 17, type: reg,  num_bits: 6,  signed: false, src: true,  dest: false, pc_rel: false, rightshift: 0, bits: [[43, 0], [44, 1], [45, 2], [46, 3], [47, 4], [48, 5]]},
+    {idx: 18, type: reg,  num_bits: 6,  signed: false, src: true,  dest: false, pc_rel: false, rightshift: 0, bits: [[12, 0], [13, 1], [14, 2], [15, 3], [16, 4], [17, 5]]},
+    {idx: 19, type: reg,  num_bits: 6,  signed: false, src: true,  dest: false, pc_rel: false, rightshift: 0, bits: [[43, 0], [44, 1], [45, 2], [46, 3], [47, 4], [48, 5]]},
+    {idx: 20, type: addr, num_bits: 17, signed: true,  src: false, dest: false, pc_rel: true,  rightshift: 3, bits: [[31, 0], [32, 1], [33, 2], [34, 3], [35, 4], [36, 5], [43, 6], [44, 7], [45, 8], [46, 9], [47, 10], [48, 11], [49, 12], [50, 13], [51, 14], [52, 15], [53, 16]]},
+    {idx: 21, type: imm,  num_bits: 6,  signed: false, src: false, dest: false, pc_rel: false, rightshift: 0, bits: [[18, 0], [19, 1], [20, 2], [21, 3], [22, 4], [23, 5]]},
+    {idx: 22, type: imm,  num_bits: 6,  signed: false, src: false, dest: false, pc_rel: false, rightshift: 0, bits: [[12, 0], [13, 1], [14, 2], [15, 3], [16, 4], [17, 5]]},
+    {idx: 23, type: reg,  num_bits: 6,  signed: false, src: true,  dest: true,  pc_rel: false, rightshift: 0, bits: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 5]]},
+    {idx: 24, type: reg,  num_bits: 6,  signed: false, src: true,  dest: true,  pc_rel: false, rightshift: 0, bits: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 5]]},
+    {idx: 25, type: addr, num_bits: 27, signed: true,  src: false, dest: false, pc_rel: true,  rightshift: 3, bits: [[31, 0], [32, 1], [33, 2], [34, 3], [35, 4], [36, 5], [37, 6], [38, 7], [39, 8], [40, 9], [41, 10], [42, 11], [43, 12], [44, 13], [45, 14], [46, 15], [47, 16], [48, 17], [49, 18], [50, 19], [51, 20], [52, 21], [53, 22], [54, 23], [55, 24], [56, 25], [57, 26]]},
+    {idx: 26, type: reg,  num_bits: 6,  signed: false, src: false, dest: true,  pc_rel: false, rightshift: 0, bits: [[51, 0], [52, 1], [53, 2], [54, 3], [55, 4], [56, 5]]},
+    {idx: 27, type: spr,  num_bits: 14, signed: false, src: false, dest: false, pc_rel: false, rightshift: 0, bits: [[37, 0], [38, 1], [39, 2], [40, 3], [41, 4], [42, 5], [43, 6], [44, 7], [45, 8], [46, 9], [47, 10], [48, 11], [49, 12], [50, 13]]},
+    {idx: 28, type: spr,  num_bits: 14, signed: false, src: false, dest: false, pc_rel: false, rightshift: 0, bits: [[31, 0], [32, 1], [33, 2], [34, 3], [35, 4], [36, 5], [43, 6], [44, 7], [45, 8], [46, 9], [47, 10], [48, 11], [49, 12], [50, 13]]},
+    {idx: 29, type: imm,  num_bits: 6,  signed: false, src: false, dest: false, pc_rel: false, rightshift: 0, bits: [[12, 0], [13, 1], [14, 2], [15, 3], [16, 4], [17, 5]]},
+    {idx: 30, type: imm,  num_bits: 6,  signed: false, src: false, dest: false, pc_rel: false, rightshift: 0, bits: [[43, 0], [44, 1], [45, 2], [46, 3], [47, 4], [48, 5]]},
+    {idx: 31, type: imm,  num_bits: 6,  signed: false, src: false, dest: false, pc_rel: false, rightshift: 0, bits: [[12, 0], [13, 1], [14, 2], [15, 3], [16, 4], [17, 5]]},
+    {idx: 32, type: imm,  num_bits: 6,  signed: false, src: false, dest: false, pc_rel: false, rightshift: 0, bits: [[43, 0], [44, 1], [45, 2], [46, 3], [47, 4], [48, 5]]},
+    {idx: 33, type: reg,  num_bits: 6,  signed: false, src: true,  dest: false, pc_rel: false, rightshift: 0, bits: [[51, 0], [52, 1], [53, 2], [54, 3], [55, 4], [56, 5]]},
+    {idx: 34, type: imm,  num_bits: 8,  signed: true,  src: false, dest: false, pc_rel: false, rightshift: 0, bits: [[31, 0], [32, 1], [33, 2], [34, 3], [35, 4], [36, 5], [49, 6], [50, 7]]},
+  ],
+  opcodes: [
+    {name: "bpt",                   pipes: 2,  num_operands: 0, enc: [
+      {pipe: X1, mask: "0xffffffff80000000", val: "0x286a44ae00000000", ops: []},
+    ]},
+    {name: "info",                  pipes: 15, num_operands: 1, enc: [
+      {pipe: X0, mask: "0xc00000007ff00fff", val: "0x0000000040300fff", ops: [0]},
+      {pipe: X1, mask: "0xfff807ff80000000", val: "0x181807ff80000000", ops: [1]},
+      {pipe: Y0, mask: "0x0000000078000fff", val: "0x0000000010000fff", ops: [2]},
+      {pipe: Y1, mask: "0x3c0007ff80000000", val: "0x0c0007ff80000000", ops: [3]},
+    ]},
+    {name: "infol",                 pipes: 3,  num_operands: 1, enc: [
+      {pipe: X0, mask: "0xc000000070000fff", val: "0x0000000070000fff", ops: [4]},
+      {pipe: X1, mask: "0xf80007ff80000000", val: "0x380007ff80000000", ops: [5]},
+    ]},
+    {name: "ld4s_tls",              pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x1858000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "ld_tls",                pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x18a0000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "move",                  pipes: 15, num_operands: 2, enc: [
+      {pipe: X0, mask: "0xc00000007ffff000", val: "0x000000005107f000", ops: [8, 9]},
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x283bf80000000000", ops: [6, 7]},
+      {pipe: Y0, mask: "0x00000000780ff000", val: "0x00000000500bf000", ops: [10, 11]},
+      {pipe: Y1, mask: "0x3c07f80000000000", val: "0x2c05f80000000000", ops: [12, 13]},
+    ]},
+    {name: "movei",                 pipes: 15, num_operands: 2, enc: [
+      {pipe: X0, mask: "0xc00000007ff00fc0", val: "0x0000000040100fc0", ops: [8, 0]},
+      {pipe: X1, mask: "0xfff807e000000000", val: "0x180807e000000000", ops: [6, 1]},
+      {pipe: Y0, mask: "0x0000000078000fc0", val: "0x0000000000000fc0", ops: [10, 2]},
+      {pipe: Y1, mask: "0x3c0007e000000000", val: "0x040007e000000000", ops: [12, 3]},
+    ]},
+    {name: "moveli",                pipes: 3,  num_operands: 2, enc: [
+      {pipe: X0, mask: "0xc000000070000fc0", val: "0x0000000010000fc0", ops: [8, 4]},
+      {pipe: X1, mask: "0xf80007e000000000", val: "0x000007e000000000", ops: [6, 5]},
+    ]},
+    {name: "prefetch",              pipes: 18, num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff81f80000000", val: "0x286a801f80000000", ops: [7]},
+      {pipe: Y2, mask: "0xc3f8000004000000", val: "0x41f8000004000000", ops: [14]},
+    ]},
+    {name: "prefetch_add_l1",       pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfff8001f80000000", val: "0x1840001f80000000", ops: [15, 1]},
+    ]},
+    {name: "prefetch_add_l1_fault", pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfff8001f80000000", val: "0x1838001f80000000", ops: [15, 1]},
+    ]},
+    {name: "prefetch_add_l2",       pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfff8001f80000000", val: "0x1850001f80000000", ops: [15, 1]},
+    ]},
+    {name: "prefetch_add_l2_fault", pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfff8001f80000000", val: "0x1848001f80000000", ops: [15, 1]},
+    ]},
+    {name: "prefetch_add_l3",       pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfff8001f80000000", val: "0x1860001f80000000", ops: [15, 1]},
+    ]},
+    {name: "prefetch_add_l3_fault", pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfff8001f80000000", val: "0x1858001f80000000", ops: [15, 1]},
+    ]},
+    {name: "prefetch_l1",           pipes: 18, num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff81f80000000", val: "0x286a801f80000000", ops: [7]},
+      {pipe: Y2, mask: "0xc3f8000004000000", val: "0x41f8000004000000", ops: [14]},
+    ]},
+    {name: "prefetch_l1_fault",     pipes: 18, num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff81f80000000", val: "0x286a781f80000000", ops: [7]},
+      {pipe: Y2, mask: "0xc3f8000004000000", val: "0x41f8000000000000", ops: [14]},
+    ]},
+    {name: "prefetch_l2",           pipes: 18, num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff81f80000000", val: "0x286a901f80000000", ops: [7]},
+      {pipe: Y2, mask: "0xc3f8000004000000", val: "0x43f8000004000000", ops: [14]},
+    ]},
+    {name: "prefetch_l2_fault",     pipes: 18, num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff81f80000000", val: "0x286a881f80000000", ops: [7]},
+      {pipe: Y2, mask: "0xc3f8000004000000", val: "0x43f8000000000000", ops: [14]},
+    ]},
+    {name: "prefetch_l3",           pipes: 18, num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff81f80000000", val: "0x286aa01f80000000", ops: [7]},
+      {pipe: Y2, mask: "0xc3f8000004000000", val: "0x83f8000000000000", ops: [14]},
+    ]},
+    {name: "prefetch_l3_fault",     pipes: 18, num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff81f80000000", val: "0x286a981f80000000", ops: [7]},
+      {pipe: Y2, mask: "0xc3f8000004000000", val: "0x81f8000004000000", ops: [14]},
+    ]},
+    {name: "raise",                 pipes: 2,  num_operands: 0, enc: [
+      {pipe: X1, mask: "0xffffffff80000000", val: "0x286a44ae80000000", ops: []},
+    ]},
+    {name: "add",                   pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000500c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2806000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000028040000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x1802000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "addi",                  pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000040100000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1808000000000000", ops: [6, 7, 1]},
+      {pipe: Y0, mask: "0x0000000078000000", val: "0x0000000000000000", ops: [10, 11, 2]},
+      {pipe: Y1, mask: "0x3c00000000000000", val: "0x0400000000000000", ops: [12, 13, 3]},
+    ]},
+    {name: "addli",                 pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc000000070000000", val: "0x0000000010000000", ops: [8, 9, 4]},
+      {pipe: X1, mask: "0xf800000000000000", val: "0x0000000000000000", ops: [6, 7, 5]},
+    ]},
+    {name: "addx",                  pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050080000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2804000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000028000000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x1800000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "addxi",                 pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000040200000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1810000000000000", ops: [6, 7, 1]},
+      {pipe: Y0, mask: "0x0000000078000000", val: "0x0000000008000000", ops: [10, 11, 2]},
+      {pipe: Y1, mask: "0x3c00000000000000", val: "0x0800000000000000", ops: [12, 13, 3]},
+    ]},
+    {name: "addxli",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc000000070000000", val: "0x0000000020000000", ops: [8, 9, 4]},
+      {pipe: X1, mask: "0xf800000000000000", val: "0x0800000000000000", ops: [6, 7, 5]},
+    ]},
+    {name: "addxsc",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050040000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2802000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "and",                   pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050100000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2808000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000050000000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x2c00000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "andi",                  pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000040300000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1818000000000000", ops: [6, 7, 1]},
+      {pipe: Y0, mask: "0x0000000078000000", val: "0x0000000010000000", ops: [10, 11, 2]},
+      {pipe: Y1, mask: "0x3c00000000000000", val: "0x0c00000000000000", ops: [12, 13, 3]},
+    ]},
+    {name: "beqz",                  pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x1440000000000000", ops: [7, 20]},
+    ]},
+    {name: "beqzt",                 pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x1400000000000000", ops: [7, 20]},
+    ]},
+    {name: "bfexts",                pipes: 1,  num_operands: 4, enc: [
+      {pipe: X0, mask: "0xc00000007f000000", val: "0x0000000034000000", ops: [8, 9, 21, 22]},
+    ]},
+    {name: "bfextu",                pipes: 1,  num_operands: 4, enc: [
+      {pipe: X0, mask: "0xc00000007f000000", val: "0x0000000035000000", ops: [8, 9, 21, 22]},
+    ]},
+    {name: "bfins",                 pipes: 1,  num_operands: 4, enc: [
+      {pipe: X0, mask: "0xc00000007f000000", val: "0x0000000036000000", ops: [23, 9, 21, 22]},
+    ]},
+    {name: "bgez",                  pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x14c0000000000000", ops: [7, 20]},
+    ]},
+    {name: "bgezt",                 pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x1480000000000000", ops: [7, 20]},
+    ]},
+    {name: "bgtz",                  pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x1540000000000000", ops: [7, 20]},
+    ]},
+    {name: "bgtzt",                 pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x1500000000000000", ops: [7, 20]},
+    ]},
+    {name: "blbc",                  pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x15c0000000000000", ops: [7, 20]},
+    ]},
+    {name: "blbct",                 pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x1580000000000000", ops: [7, 20]},
+    ]},
+    {name: "blbs",                  pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x1640000000000000", ops: [7, 20]},
+    ]},
+    {name: "blbst",                 pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x1600000000000000", ops: [7, 20]},
+    ]},
+    {name: "blez",                  pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x16c0000000000000", ops: [7, 20]},
+    ]},
+    {name: "blezt",                 pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x1680000000000000", ops: [7, 20]},
+    ]},
+    {name: "bltz",                  pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x1740000000000000", ops: [7, 20]},
+    ]},
+    {name: "bltzt",                 pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x1700000000000000", ops: [7, 20]},
+    ]},
+    {name: "bnez",                  pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x17c0000000000000", ops: [7, 20]},
+    ]},
+    {name: "bnezt",                 pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xffc0000000000000", val: "0x1780000000000000", ops: [7, 20]},
+    ]},
+    {name: "clz",                   pipes: 5,  num_operands: 2, enc: [
+      {pipe: X0, mask: "0xc00000007ffff000", val: "0x0000000051481000", ops: [8, 9]},
+      {pipe: Y0, mask: "0x00000000780ff000", val: "0x00000000300c1000", ops: [10, 11]},
+    ]},
+    {name: "cmoveqz",               pipes: 5,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050140000", ops: [23, 9, 16]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000048000000", ops: [24, 11, 18]},
+    ]},
+    {name: "cmovnez",               pipes: 5,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050180000", ops: [23, 9, 16]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000048040000", ops: [24, 11, 18]},
+    ]},
+    {name: "cmpeq",                 pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000501c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x280a000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000040000000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x2404000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "cmpeqi",                pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000040400000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1820000000000000", ops: [6, 7, 1]},
+      {pipe: Y0, mask: "0x0000000078000000", val: "0x0000000018000000", ops: [10, 11, 2]},
+      {pipe: Y1, mask: "0x3c00000000000000", val: "0x1000000000000000", ops: [12, 13, 3]},
+    ]},
+    {name: "cmpexch",               pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x280e000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "cmpexch4",              pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x280c000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "cmples",                pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050200000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2810000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000038000000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x2000000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "cmpleu",                pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050240000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2812000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000038040000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x2002000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "cmplts",                pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050280000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2814000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000038080000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x2004000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "cmpltsi",               pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000040500000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1828000000000000", ops: [6, 7, 1]},
+      {pipe: Y0, mask: "0x0000000078000000", val: "0x0000000020000000", ops: [10, 11, 2]},
+      {pipe: Y1, mask: "0x3c00000000000000", val: "0x1400000000000000", ops: [12, 13, 3]},
+    ]},
+    {name: "cmpltu",                pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000502c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2816000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x00000000380c0000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x2006000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "cmpltui",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000040600000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1830000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "cmpne",                 pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050300000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2818000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000040040000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x2406000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "cmul",                  pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000504c0000", ops: [8, 9, 16]},
+    ]},
+    {name: "cmula",                 pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050380000", ops: [23, 9, 16]},
+    ]},
+    {name: "cmulaf",                pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050340000", ops: [23, 9, 16]},
+    ]},
+    {name: "cmulf",                 pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050400000", ops: [8, 9, 16]},
+    ]},
+    {name: "cmulfr",                pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000503c0000", ops: [8, 9, 16]},
+    ]},
+    {name: "cmulh",                 pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050480000", ops: [8, 9, 16]},
+    ]},
+    {name: "cmulhr",                pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050440000", ops: [8, 9, 16]},
+    ]},
+    {name: "crc32_32",              pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050500000", ops: [8, 9, 16]},
+    ]},
+    {name: "crc32_8",               pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050540000", ops: [8, 9, 16]},
+    ]},
+    {name: "ctz",                   pipes: 5,  num_operands: 2, enc: [
+      {pipe: X0, mask: "0xc00000007ffff000", val: "0x0000000051482000", ops: [8, 9]},
+      {pipe: Y0, mask: "0x00000000780ff000", val: "0x00000000300c2000", ops: [10, 11]},
+    ]},
+    {name: "dblalign",              pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050640000", ops: [23, 9, 16]},
+    ]},
+    {name: "dblalign2",             pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050580000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x281a000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "dblalign4",             pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000505c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x281c000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "dblalign6",             pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050600000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x281e000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "drain",                 pipes: 2,  num_operands: 0, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a080000000000", ops: []},
+    ]},
+    {name: "dtlbpr",                pipes: 2,  num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a100000000000", ops: [7]},
+    ]},
+    {name: "exch",                  pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2822000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "exch4",                 pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2820000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "fdouble_add_flags",     pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000506c0000", ops: [8, 9, 16]},
+    ]},
+    {name: "fdouble_addsub",        pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050680000", ops: [23, 9, 16]},
+    ]},
+    {name: "fdouble_mul_flags",     pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050700000", ops: [8, 9, 16]},
+    ]},
+    {name: "fdouble_pack1",         pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050740000", ops: [8, 9, 16]},
+    ]},
+    {name: "fdouble_pack2",         pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050780000", ops: [23, 9, 16]},
+    ]},
+    {name: "fdouble_sub_flags",     pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000507c0000", ops: [8, 9, 16]},
+    ]},
+    {name: "fdouble_unpack_max",    pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050800000", ops: [8, 9, 16]},
+    ]},
+    {name: "fdouble_unpack_min",    pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050840000", ops: [8, 9, 16]},
+    ]},
+    {name: "fetchadd",              pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x282a000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "fetchadd4",             pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2824000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "fetchaddgez",           pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2828000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "fetchaddgez4",          pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2826000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "fetchand",              pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x282e000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "fetchand4",             pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x282c000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "fetchor",               pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2832000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "fetchor4",              pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2830000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "finv",                  pipes: 2,  num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a180000000000", ops: [7]},
+    ]},
+    {name: "flush",                 pipes: 2,  num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a280000000000", ops: [7]},
+    ]},
+    {name: "flushwb",               pipes: 2,  num_operands: 0, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a200000000000", ops: []},
+    ]},
+    {name: "fnop",                  pipes: 15, num_operands: 0, enc: [
+      {pipe: X0, mask: "0xc00000007ffff000", val: "0x0000000051483000", ops: []},
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a300000000000", ops: []},
+      {pipe: Y0, mask: "0x00000000780ff000", val: "0x00000000300c3000", ops: []},
+      {pipe: Y1, mask: "0x3c07f80000000000", val: "0x1c06400000000000", ops: []},
+    ]},
+    {name: "fsingle_add1",          pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050880000", ops: [8, 9, 16]},
+    ]},
+    {name: "fsingle_addsub2",       pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000508c0000", ops: [23, 9, 16]},
+    ]},
+    {name: "fsingle_mul1",          pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050900000", ops: [8, 9, 16]},
+    ]},
+    {name: "fsingle_mul2",          pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050940000", ops: [8, 9, 16]},
+    ]},
+    {name: "fsingle_pack1",         pipes: 5,  num_operands: 2, enc: [
+      {pipe: X0, mask: "0xc00000007ffff000", val: "0x0000000051484000", ops: [8, 9]},
+      {pipe: Y0, mask: "0x00000000780ff000", val: "0x00000000300c4000", ops: [10, 11]},
+    ]},
+    {name: "fsingle_pack2",         pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050980000", ops: [8, 9, 16]},
+    ]},
+    {name: "fsingle_sub1",          pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000509c0000", ops: [8, 9, 16]},
+    ]},
+    {name: "icoh",                  pipes: 2,  num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a380000000000", ops: [7]},
+    ]},
+    {name: "ill",                   pipes: 10, num_operands: 0, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a400000000000", ops: []},
+      {pipe: Y1, mask: "0x3c07f80000000000", val: "0x1c06480000000000", ops: []},
+    ]},
+    {name: "inv",                   pipes: 2,  num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a480000000000", ops: [7]},
+    ]},
+    {name: "iret",                  pipes: 2,  num_operands: 0, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a500000000000", ops: []},
+    ]},
+    {name: "j",                     pipes: 2,  num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfc00000000000000", val: "0x2400000000000000", ops: [25]},
+    ]},
+    {name: "jal",                   pipes: 2,  num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfc00000000000000", val: "0x2000000000000000", ops: [25]},
+    ]},
+    {name: "jalr",                  pipes: 10, num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a600000000000", ops: [7]},
+      {pipe: Y1, mask: "0x3c07f80000000000", val: "0x1c06580000000000", ops: [13]},
+    ]},
+    {name: "jalrp",                 pipes: 10, num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a580000000000", ops: [7]},
+      {pipe: Y1, mask: "0x3c07f80000000000", val: "0x1c06500000000000", ops: [13]},
+    ]},
+    {name: "jr",                    pipes: 10, num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a700000000000", ops: [7]},
+      {pipe: Y1, mask: "0x3c07f80000000000", val: "0x1c06680000000000", ops: [13]},
+    ]},
+    {name: "jrp",                   pipes: 10, num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a680000000000", ops: [7]},
+      {pipe: Y1, mask: "0x3c07f80000000000", val: "0x1c06600000000000", ops: [13]},
+    ]},
+    {name: "ld",                    pipes: 18, num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286ae80000000000", ops: [6, 7]},
+      {pipe: Y2, mask: "0xc200000004000000", val: "0x8200000004000000", ops: [26, 14]},
+    ]},
+    {name: "ld1s",                  pipes: 18, num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a780000000000", ops: [6, 7]},
+      {pipe: Y2, mask: "0xc200000004000000", val: "0x4000000000000000", ops: [26, 14]},
+    ]},
+    {name: "ld1s_add",              pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1838000000000000", ops: [6, 15, 1]},
+    ]},
+    {name: "ld1u",                  pipes: 18, num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a800000000000", ops: [6, 7]},
+      {pipe: Y2, mask: "0xc200000004000000", val: "0x4000000004000000", ops: [26, 14]},
+    ]},
+    {name: "ld1u_add",              pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1840000000000000", ops: [6, 15, 1]},
+    ]},
+    {name: "ld2s",                  pipes: 18, num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a880000000000", ops: [6, 7]},
+      {pipe: Y2, mask: "0xc200000004000000", val: "0x4200000000000000", ops: [26, 14]},
+    ]},
+    {name: "ld2s_add",              pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1848000000000000", ops: [6, 15, 1]},
+    ]},
+    {name: "ld2u",                  pipes: 18, num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a900000000000", ops: [6, 7]},
+      {pipe: Y2, mask: "0xc200000004000000", val: "0x4200000004000000", ops: [26, 14]},
+    ]},
+    {name: "ld2u_add",              pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1850000000000000", ops: [6, 15, 1]},
+    ]},
+    {name: "ld4s",                  pipes: 18, num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286a980000000000", ops: [6, 7]},
+      {pipe: Y2, mask: "0xc200000004000000", val: "0x8000000004000000", ops: [26, 14]},
+    ]},
+    {name: "ld4s_add",              pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1858000000000000", ops: [6, 15, 1]},
+    ]},
+    {name: "ld4u",                  pipes: 18, num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286aa00000000000", ops: [6, 7]},
+      {pipe: Y2, mask: "0xc200000004000000", val: "0x8200000000000000", ops: [26, 14]},
+    ]},
+    {name: "ld4u_add",              pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1860000000000000", ops: [6, 15, 1]},
+    ]},
+    {name: "ld_add",                pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x18a0000000000000", ops: [6, 15, 1]},
+    ]},
+    {name: "ldna",                  pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286aa80000000000", ops: [6, 7]},
+    ]},
+    {name: "ldna_add",              pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x18a8000000000000", ops: [6, 15, 1]},
+    ]},
+    {name: "ldnt",                  pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286ae00000000000", ops: [6, 7]},
+    ]},
+    {name: "ldnt1s",                pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286ab00000000000", ops: [6, 7]},
+    ]},
+    {name: "ldnt1s_add",            pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1868000000000000", ops: [6, 15, 1]},
+    ]},
+    {name: "ldnt1u",                pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286ab80000000000", ops: [6, 7]},
+    ]},
+    {name: "ldnt1u_add",            pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1870000000000000", ops: [6, 15, 1]},
+    ]},
+    {name: "ldnt2s",                pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286ac00000000000", ops: [6, 7]},
+    ]},
+    {name: "ldnt2s_add",            pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1878000000000000", ops: [6, 15, 1]},
+    ]},
+    {name: "ldnt2u",                pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286ac80000000000", ops: [6, 7]},
+    ]},
+    {name: "ldnt2u_add",            pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1880000000000000", ops: [6, 15, 1]},
+    ]},
+    {name: "ldnt4s",                pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286ad00000000000", ops: [6, 7]},
+    ]},
+    {name: "ldnt4s_add",            pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1888000000000000", ops: [6, 15, 1]},
+    ]},
+    {name: "ldnt4u",                pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286ad80000000000", ops: [6, 7]},
+    ]},
+    {name: "ldnt4u_add",            pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1890000000000000", ops: [6, 15, 1]},
+    ]},
+    {name: "ldnt_add",              pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1898000000000000", ops: [6, 15, 1]},
+    ]},
+    {name: "lnk",                   pipes: 10, num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286af00000000000", ops: [6]},
+      {pipe: Y1, mask: "0x3c07f80000000000", val: "0x1c06700000000000", ops: [12]},
+    ]},
+    {name: "mf",                    pipes: 2,  num_operands: 0, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286af80000000000", ops: []},
+    ]},
+    {name: "mfspr",                 pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x18b0000000000000", ops: [6, 27]},
+    ]},
+    {name: "mm",                    pipes: 1,  num_operands: 4, enc: [
+      {pipe: X0, mask: "0xc00000007f000000", val: "0x0000000037000000", ops: [23, 9, 21, 22]},
+    ]},
+    {name: "mnz",                   pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050a00000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2834000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000048080000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x2804000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "mtspr",                 pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x18b8000000000000", ops: [28, 7]},
+    ]},
+    {name: "mul_hs_hs",             pipes: 5,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050d40000", ops: [8, 9, 16]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000068000000", ops: [10, 11, 18]},
+    ]},
+    {name: "mul_hs_hu",             pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050d80000", ops: [8, 9, 16]},
+    ]},
+    {name: "mul_hs_ls",             pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050dc0000", ops: [8, 9, 16]},
+    ]},
+    {name: "mul_hs_lu",             pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050e00000", ops: [8, 9, 16]},
+    ]},
+    {name: "mul_hu_hu",             pipes: 5,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050e40000", ops: [8, 9, 16]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000068040000", ops: [10, 11, 18]},
+    ]},
+    {name: "mul_hu_ls",             pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050e80000", ops: [8, 9, 16]},
+    ]},
+    {name: "mul_hu_lu",             pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050ec0000", ops: [8, 9, 16]},
+    ]},
+    {name: "mul_ls_ls",             pipes: 5,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050f00000", ops: [8, 9, 16]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000068080000", ops: [10, 11, 18]},
+    ]},
+    {name: "mul_ls_lu",             pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050f40000", ops: [8, 9, 16]},
+    ]},
+    {name: "mul_lu_lu",             pipes: 5,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050f80000", ops: [8, 9, 16]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x00000000680c0000", ops: [10, 11, 18]},
+    ]},
+    {name: "mula_hs_hs",            pipes: 5,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050a80000", ops: [23, 9, 16]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000070000000", ops: [24, 11, 18]},
+    ]},
+    {name: "mula_hs_hu",            pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050ac0000", ops: [23, 9, 16]},
+    ]},
+    {name: "mula_hs_ls",            pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050b00000", ops: [23, 9, 16]},
+    ]},
+    {name: "mula_hs_lu",            pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050b40000", ops: [23, 9, 16]},
+    ]},
+    {name: "mula_hu_hu",            pipes: 5,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050b80000", ops: [23, 9, 16]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000070040000", ops: [24, 11, 18]},
+    ]},
+    {name: "mula_hu_ls",            pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050bc0000", ops: [23, 9, 16]},
+    ]},
+    {name: "mula_hu_lu",            pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050c00000", ops: [23, 9, 16]},
+    ]},
+    {name: "mula_ls_ls",            pipes: 5,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050c40000", ops: [23, 9, 16]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000070080000", ops: [24, 11, 18]},
+    ]},
+    {name: "mula_ls_lu",            pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050c80000", ops: [23, 9, 16]},
+    ]},
+    {name: "mula_lu_lu",            pipes: 5,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050cc0000", ops: [23, 9, 16]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x00000000700c0000", ops: [24, 11, 18]},
+    ]},
+    {name: "mulax",                 pipes: 5,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050a40000", ops: [23, 9, 16]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000040080000", ops: [24, 11, 18]},
+    ]},
+    {name: "mulx",                  pipes: 5,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050d00000", ops: [8, 9, 16]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x00000000400c0000", ops: [10, 11, 18]},
+    ]},
+    {name: "mz",                    pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000050fc0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2836000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x00000000480c0000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x2806000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "nap",                   pipes: 2,  num_operands: 0, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286b000000000000", ops: []},
+    ]},
+    {name: "nop",                   pipes: 15, num_operands: 0, enc: [
+      {pipe: X0, mask: "0xc00000007ffff000", val: "0x0000000051485000", ops: []},
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286b080000000000", ops: []},
+      {pipe: Y0, mask: "0x00000000780ff000", val: "0x00000000300c5000", ops: []},
+      {pipe: Y1, mask: "0x3c07f80000000000", val: "0x1c06780000000000", ops: []},
+    ]},
+    {name: "nor",                   pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051000000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2838000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000050040000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x2c02000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "or",                    pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051040000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x283a000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000050080000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x2c04000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "ori",                   pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000040700000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x18c0000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "pcnt",                  pipes: 5,  num_operands: 2, enc: [
+      {pipe: X0, mask: "0xc00000007ffff000", val: "0x0000000051486000", ops: [8, 9]},
+      {pipe: Y0, mask: "0x00000000780ff000", val: "0x00000000300c6000", ops: [10, 11]},
+    ]},
+    {name: "revbits",               pipes: 5,  num_operands: 2, enc: [
+      {pipe: X0, mask: "0xc00000007ffff000", val: "0x0000000051487000", ops: [8, 9]},
+      {pipe: Y0, mask: "0x00000000780ff000", val: "0x00000000300c7000", ops: [10, 11]},
+    ]},
+    {name: "revbytes",              pipes: 5,  num_operands: 2, enc: [
+      {pipe: X0, mask: "0xc00000007ffff000", val: "0x0000000051488000", ops: [8, 9]},
+      {pipe: Y0, mask: "0x00000000780ff000", val: "0x00000000300c8000", ops: [10, 11]},
+    ]},
+    {name: "rotl",                  pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051080000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x283c000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000058000000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x3000000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "rotli",                 pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000060040000", ops: [8, 9, 29]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x3002000000000000", ops: [6, 7, 30]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000078000000", ops: [10, 11, 31]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x3800000000000000", ops: [12, 13, 32]},
+    ]},
+    {name: "shl",                   pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051280000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x284c000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000058040000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x3002000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "shl16insli",            pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc000000070000000", val: "0x0000000070000000", ops: [8, 9, 4]},
+      {pipe: X1, mask: "0xf800000000000000", val: "0x3800000000000000", ops: [6, 7, 5]},
+    ]},
+    {name: "shl1add",               pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051100000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2840000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000030000000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x1c00000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "shl1addx",              pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000510c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x283e000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000060040000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x3402000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "shl2add",               pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051180000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2844000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000030040000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x1c02000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "shl2addx",              pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051140000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2842000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000060080000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x3404000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "shl3add",               pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051200000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2848000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000030080000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x1c04000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "shl3addx",              pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000511c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2846000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x00000000600c0000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x3406000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "shli",                  pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000060080000", ops: [8, 9, 29]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x3004000000000000", ops: [6, 7, 30]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000078040000", ops: [10, 11, 31]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x3802000000000000", ops: [12, 13, 32]},
+    ]},
+    {name: "shlx",                  pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051240000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x284a000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "shlxi",                 pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000600c0000", ops: [8, 9, 29]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x3006000000000000", ops: [6, 7, 30]},
+    ]},
+    {name: "shrs",                  pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000512c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x284e000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000058080000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x3004000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "shrsi",                 pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000060100000", ops: [8, 9, 29]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x3008000000000000", ops: [6, 7, 30]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000078080000", ops: [10, 11, 31]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x3804000000000000", ops: [12, 13, 32]},
+    ]},
+    {name: "shru",                  pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051340000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2852000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x00000000580c0000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x3006000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "shrui",                 pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000060140000", ops: [8, 9, 29]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x300a000000000000", ops: [6, 7, 30]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x00000000780c0000", ops: [10, 11, 31]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x3806000000000000", ops: [12, 13, 32]},
+    ]},
+    {name: "shrux",                 pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051300000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2850000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "shruxi",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000060180000", ops: [8, 9, 29]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x300c000000000000", ops: [6, 7, 30]},
+    ]},
+    {name: "shufflebytes",          pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051380000", ops: [23, 9, 16]},
+    ]},
+    {name: "st",                    pipes: 18, num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2862000000000000", ops: [7, 17]},
+      {pipe: Y2, mask: "0xc200000004000000", val: "0xc200000004000000", ops: [14, 33]},
+    ]},
+    {name: "st1",                   pipes: 18, num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2854000000000000", ops: [7, 17]},
+      {pipe: Y2, mask: "0xc200000004000000", val: "0xc000000000000000", ops: [14, 33]},
+    ]},
+    {name: "st1_add",               pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x18c8000000000000", ops: [15, 17, 34]},
+    ]},
+    {name: "st2",                   pipes: 18, num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2856000000000000", ops: [7, 17]},
+      {pipe: Y2, mask: "0xc200000004000000", val: "0xc000000004000000", ops: [14, 33]},
+    ]},
+    {name: "st2_add",               pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x18d0000000000000", ops: [15, 17, 34]},
+    ]},
+    {name: "st4",                   pipes: 18, num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2858000000000000", ops: [7, 17]},
+      {pipe: Y2, mask: "0xc200000004000000", val: "0xc200000000000000", ops: [14, 33]},
+    ]},
+    {name: "st4_add",               pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x18d8000000000000", ops: [15, 17, 34]},
+    ]},
+    {name: "st_add",                pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1900000000000000", ops: [15, 17, 34]},
+    ]},
+    {name: "stnt",                  pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2860000000000000", ops: [7, 17]},
+    ]},
+    {name: "stnt1",                 pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x285a000000000000", ops: [7, 17]},
+    ]},
+    {name: "stnt1_add",             pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x18e0000000000000", ops: [15, 17, 34]},
+    ]},
+    {name: "stnt2",                 pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x285c000000000000", ops: [7, 17]},
+    ]},
+    {name: "stnt2_add",             pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x18e8000000000000", ops: [15, 17, 34]},
+    ]},
+    {name: "stnt4",                 pipes: 2,  num_operands: 2, enc: [
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x285e000000000000", ops: [7, 17]},
+    ]},
+    {name: "stnt4_add",             pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x18f0000000000000", ops: [15, 17, 34]},
+    ]},
+    {name: "stnt_add",              pipes: 2,  num_operands: 3, enc: [
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x18f8000000000000", ops: [15, 17, 34]},
+    ]},
+    {name: "sub",                   pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051440000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2868000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x00000000280c0000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x1806000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "subx",                  pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051400000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2866000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x0000000028080000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x1804000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "subxsc",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000513c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2864000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "swint0",                pipes: 2,  num_operands: 0, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286b100000000000", ops: []},
+    ]},
+    {name: "swint1",                pipes: 2,  num_operands: 0, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286b180000000000", ops: []},
+    ]},
+    {name: "swint2",                pipes: 2,  num_operands: 0, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286b200000000000", ops: []},
+    ]},
+    {name: "swint3",                pipes: 2,  num_operands: 0, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286b280000000000", ops: []},
+    ]},
+    {name: "tblidxb0",              pipes: 5,  num_operands: 2, enc: [
+      {pipe: X0, mask: "0xc00000007ffff000", val: "0x0000000051489000", ops: [23, 9]},
+      {pipe: Y0, mask: "0x00000000780ff000", val: "0x00000000300c9000", ops: [24, 11]},
+    ]},
+    {name: "tblidxb1",              pipes: 5,  num_operands: 2, enc: [
+      {pipe: X0, mask: "0xc00000007ffff000", val: "0x000000005148a000", ops: [23, 9]},
+      {pipe: Y0, mask: "0x00000000780ff000", val: "0x00000000300ca000", ops: [24, 11]},
+    ]},
+    {name: "tblidxb2",              pipes: 5,  num_operands: 2, enc: [
+      {pipe: X0, mask: "0xc00000007ffff000", val: "0x000000005148b000", ops: [23, 9]},
+      {pipe: Y0, mask: "0x00000000780ff000", val: "0x00000000300cb000", ops: [24, 11]},
+    ]},
+    {name: "tblidxb3",              pipes: 5,  num_operands: 2, enc: [
+      {pipe: X0, mask: "0xc00000007ffff000", val: "0x000000005148c000", ops: [23, 9]},
+      {pipe: Y0, mask: "0x00000000780ff000", val: "0x00000000300cc000", ops: [24, 11]},
+    ]},
+    {name: "v1add",                 pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051500000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x286e000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1addi",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000040800000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1908000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "v1adduc",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000514c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x286c000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1adiffu",              pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051540000", ops: [8, 9, 16]},
+    ]},
+    {name: "v1avgu",                pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051580000", ops: [8, 9, 16]},
+    ]},
+    {name: "v1cmpeq",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000515c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2870000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1cmpeqi",              pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000040900000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1910000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "v1cmples",              pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051600000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2872000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1cmpleu",              pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051640000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2874000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1cmplts",              pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051680000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2876000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1cmpltsi",             pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000040a00000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1918000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "v1cmpltu",              pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000516c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2878000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1cmpltui",             pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000040b00000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1920000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "v1cmpne",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051700000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x287a000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1ddotpu",              pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052880000", ops: [8, 9, 16]},
+    ]},
+    {name: "v1ddotpua",             pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052840000", ops: [23, 9, 16]},
+    ]},
+    {name: "v1ddotpus",             pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051780000", ops: [8, 9, 16]},
+    ]},
+    {name: "v1ddotpusa",            pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051740000", ops: [23, 9, 16]},
+    ]},
+    {name: "v1dotp",                pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051880000", ops: [8, 9, 16]},
+    ]},
+    {name: "v1dotpa",               pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000517c0000", ops: [23, 9, 16]},
+    ]},
+    {name: "v1dotpu",               pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052900000", ops: [8, 9, 16]},
+    ]},
+    {name: "v1dotpua",              pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000528c0000", ops: [23, 9, 16]},
+    ]},
+    {name: "v1dotpus",              pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051840000", ops: [8, 9, 16]},
+    ]},
+    {name: "v1dotpusa",             pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051800000", ops: [23, 9, 16]},
+    ]},
+    {name: "v1int_h",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000518c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x287c000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1int_l",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051900000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x287e000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1maxu",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051940000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2880000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1maxui",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000040c00000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1928000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "v1minu",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051980000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2882000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1minui",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000040d00000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1930000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "v1mnz",                 pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000519c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2884000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1multu",               pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051a00000", ops: [8, 9, 16]},
+    ]},
+    {name: "v1mulu",                pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051a80000", ops: [8, 9, 16]},
+    ]},
+    {name: "v1mulus",               pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051a40000", ops: [8, 9, 16]},
+    ]},
+    {name: "v1mz",                  pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051ac0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2886000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1sadau",               pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051b00000", ops: [23, 9, 16]},
+    ]},
+    {name: "v1sadu",                pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051b40000", ops: [8, 9, 16]},
+    ]},
+    {name: "v1shl",                 pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051b80000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2888000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1shli",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000601c0000", ops: [8, 9, 29]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x300e000000000000", ops: [6, 7, 30]},
+    ]},
+    {name: "v1shrs",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051bc0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x288a000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1shrsi",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000060200000", ops: [8, 9, 29]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x3010000000000000", ops: [6, 7, 30]},
+    ]},
+    {name: "v1shru",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051c00000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x288c000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1shrui",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000060240000", ops: [8, 9, 29]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x3012000000000000", ops: [6, 7, 30]},
+    ]},
+    {name: "v1sub",                 pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051c80000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2890000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v1subuc",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051c40000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x288e000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2add",                 pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051d00000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2894000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2addi",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000040e00000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1938000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "v2addsc",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051cc0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2892000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2adiffs",              pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051d40000", ops: [8, 9, 16]},
+    ]},
+    {name: "v2avgs",                pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051d80000", ops: [8, 9, 16]},
+    ]},
+    {name: "v2cmpeq",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051dc0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2896000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2cmpeqi",              pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000040f00000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1940000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "v2cmples",              pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051e00000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x2898000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2cmpleu",              pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051e40000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x289a000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2cmplts",              pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051e80000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x289c000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2cmpltsi",             pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000041000000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1948000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "v2cmpltu",              pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051ec0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x289e000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2cmpltui",             pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000041100000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1950000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "v2cmpne",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051f00000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28a0000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2dotp",                pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051f80000", ops: [8, 9, 16]},
+    ]},
+    {name: "v2dotpa",               pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051f40000", ops: [23, 9, 16]},
+    ]},
+    {name: "v2int_h",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000051fc0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28a2000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2int_l",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052000000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28a4000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2maxs",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052040000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28a6000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2maxsi",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000041200000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1958000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "v2mins",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052080000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28a8000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2minsi",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000041300000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1960000000000000", ops: [6, 7, 1]},
+    ]},
+    {name: "v2mnz",                 pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000520c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28aa000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2mulfsc",              pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052100000", ops: [8, 9, 16]},
+    ]},
+    {name: "v2muls",                pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052140000", ops: [8, 9, 16]},
+    ]},
+    {name: "v2mults",               pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052180000", ops: [8, 9, 16]},
+    ]},
+    {name: "v2mz",                  pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000521c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28ac000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2packh",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052200000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28ae000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2packl",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052240000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28b0000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2packuc",              pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052280000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28b2000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2sadas",               pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000522c0000", ops: [23, 9, 16]},
+    ]},
+    {name: "v2sadau",               pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052300000", ops: [23, 9, 16]},
+    ]},
+    {name: "v2sads",                pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052340000", ops: [8, 9, 16]},
+    ]},
+    {name: "v2sadu",                pipes: 1,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052380000", ops: [8, 9, 16]},
+    ]},
+    {name: "v2shl",                 pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052400000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28b6000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2shli",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000060280000", ops: [8, 9, 29]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x3014000000000000", ops: [6, 7, 30]},
+    ]},
+    {name: "v2shlsc",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000523c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28b4000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2shrs",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052440000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28b8000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2shrsi",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000602c0000", ops: [8, 9, 29]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x3016000000000000", ops: [6, 7, 30]},
+    ]},
+    {name: "v2shru",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052480000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28ba000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2shrui",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000060300000", ops: [8, 9, 29]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x3018000000000000", ops: [6, 7, 30]},
+    ]},
+    {name: "v2sub",                 pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052500000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28be000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v2subsc",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000524c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28bc000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v4add",                 pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052580000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28c2000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v4addsc",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052540000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28c0000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v4int_h",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000525c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28c4000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v4int_l",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052600000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28c6000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v4packsc",              pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052640000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28c8000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v4shl",                 pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000526c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28cc000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v4shlsc",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052680000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28ca000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v4shrs",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052700000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28ce000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v4shru",                pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052740000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28d0000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v4sub",                 pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x00000000527c0000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28d4000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "v4subsc",               pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052780000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28d2000000000000", ops: [6, 7, 17]},
+    ]},
+    {name: "wh64",                  pipes: 2,  num_operands: 1, enc: [
+      {pipe: X1, mask: "0xfffff80000000000", val: "0x286b300000000000", ops: [7]},
+    ]},
+    {name: "xor",                   pipes: 15, num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ffc0000", val: "0x0000000052800000", ops: [8, 9, 16]},
+      {pipe: X1, mask: "0xfffe000000000000", val: "0x28d6000000000000", ops: [6, 7, 17]},
+      {pipe: Y0, mask: "0x00000000780c0000", val: "0x00000000500c0000", ops: [10, 11, 18]},
+      {pipe: Y1, mask: "0x3c06000000000000", val: "0x2c06000000000000", ops: [12, 13, 19]},
+    ]},
+    {name: "xori",                  pipes: 3,  num_operands: 3, enc: [
+      {pipe: X0, mask: "0xc00000007ff00000", val: "0x0000000041400000", ops: [8, 9, 0]},
+      {pipe: X1, mask: "0xfff8000000000000", val: "0x1968000000000000", ops: [6, 7, 1]},
+    ]},
+  ],
+}
